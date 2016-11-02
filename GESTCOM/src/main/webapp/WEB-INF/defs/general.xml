@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <definition name="common" template="/WEB-INF/layout/classic.jsp">
+    <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+  </definition>
+  
+  <definition name="index" extends="common">
+    <put-attribute name="title" value="Gestion Commerciale" />
+    <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+    <put-attribute name="current" value="index"/>
+  </definition>
+  
+  <definition name="users" extends="common">
+    <put-attribute name="title" value="Users" />
+    <put-attribute name="body" value="/WEB-INF/jsp/users.jsp" />
+    <put-attribute name="current"  value="users"/>
+  </definition>
+  
+  <definition name="articles" extends="common">
+    <put-attribute name="title" value="Stock" />
+    <put-attribute name="body" value="/WEB-INF/jsp/articles.jsp" />
+    <put-attribute name="current" value="articles"/>
+  </definition>
+  
+  <definition name="userform" extends="common">
+    <put-attribute name="title" value=" Add User " />
+    <put-attribute name="body" value="/WEB-INF/jsp/userform.jsp" />
+    <put-attribute name="current" value="userform"/>
+  </definition>
+  
+  <definition name="clients" extends="common">
+    <put-attribute name="title" value=" Clients List " />
+    <put-attribute name="body" value="/WEB-INF/jsp/clients.jsp" />
+    <put-attribute name="current" value="clients"/>
+  </definition>
+  <definition name="clientform" extends="common">
+    <put-attribute name="title" value="Add Clients " />
+    <put-attribute name="body" value="/WEB-INF/jsp/clientform.jsp" />
+    <put-attribute name="current" value="clientform"/>
+  </definition>
+  
+  <definition name="fournisseurs" extends="common">
+    <put-attribute name="title" value=" Fournisseur List " />
+    <put-attribute name="body" value="/WEB-INF/jsp/fournisseurs.jsp" />
+    <put-attribute name="current" value="fournisseurs"/>
+  </definition>
+  
+  <definition name="fournisseurform" extends="common">
+    <put-attribute name="title" value=" Add Fournisseur  " />
+    <put-attribute name="body" value="/WEB-INF/jsp/fournisseurform.jsp" />
+    <put-attribute name="current" value="fournisseurform"/>
+  </definition>
+  
+  <definition name="login" extends="common">
+    <put-attribute name="title" value=" login  " />
+    <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+    <put-attribute name="current" value="login"/>
+  </definition>
+  
+   <definition name="categories" extends="common">
+    <put-attribute name="title" value=" Categorie  " />
+    <put-attribute name="body" value="/WEB-INF/jsp/categories.jsp" />
+    <put-attribute name="current" value="articles"/>
+  </definition>
+  
+   <definition name="marque" extends="common">
+    <put-attribute name="title" value=" Marque  " />
+    <put-attribute name="body" value="/WEB-INF/jsp/marque.jsp" />
+    <put-attribute name="current" value="articles"/>
+  </definition>
+  
+  <definition name="articleForm" extends="common">
+    <put-attribute name="title" value=" articleForm  " />
+    <put-attribute name="body" value="/WEB-INF/jsp/articleForm.jsp" />
+    <put-attribute name="current" value="articles"/>
+  </definition>
+  
+  <definition name="stockfacture" extends="common">
+    <put-attribute name="title" value=" Stockfacture  " />
+    <put-attribute name="body" value="/WEB-INF/jsp/stockfacture.jsp" />
+    <put-attribute name="current" value="stock"/>
+  </definition>
+  
+  <definition name="stock" extends="common">
+    <put-attribute name="title" value=" Stock  " />
+    <put-attribute name="body" value="/WEB-INF/jsp/stock.jsp" />
+    <put-attribute name="current" value="stock"/>
+  </definition>
+  
+  <definition name="stockBLform" extends="common">
+    <put-attribute name="title" value="New StockBL  " />
+    <put-attribute name="body" value="/WEB-INF/jsp/stockBLform.jsp" />
+    <put-attribute name="current" value="stock"/>
+  </definition>
+  
+  <definition name="stockBL" extends="common">
+    <put-attribute name="title" value="print StockBL  " />
+    <put-attribute name="body" value="/WEB-INF/jsp/stockBL.jsp" />
+    <put-attribute name="current" value="stock"/>
+  </definition>
+  
+  <definition name="user-details" extends="common">
+    <put-attribute name="title" value="My account  " />
+    <put-attribute name="body" value="/WEB-INF/jsp/user-details.jsp" />
+    <put-attribute name="current" value="my account"/>
+  </definition>
+  
+  <definition name="updatefournisseur" extends="common">
+    <put-attribute name="title" value="Update Fournisseur  " />
+    <put-attribute name="body" value="/WEB-INF/jsp/updatefournisseur.jsp" />
+    <put-attribute name="current" value="Fournisseurs"/>
+  </definition>
+  
+   <definition name="updateclient" extends="common">
+    <put-attribute name="title" value="Update Client  " />
+    <put-attribute name="body" value="/WEB-INF/jsp/updateclient.jsp" />
+    <put-attribute name="current" value="clients"/>
+  </definition>
+  
+  <definition name="stockNF" extends="common">
+    <put-attribute name="title" value="Stock NF  " />
+    <put-attribute name="body" value="/WEB-INF/jsp/stockNF.jsp" />
+    <put-attribute name="current" value="stock"/>
+  </definition>
+  
+  <definition name="facture" extends="common">
+    <put-attribute name="title" value="facture " />
+    <put-attribute name="body" value="/WEB-INF/jsp/facture.jsp" />
+    <put-attribute name="current" value="stock"/>
+  </definition>
+  
+   <definition name="updatemarque" extends="common">
+    <put-attribute name="title" value="Update Marque " />
+    <put-attribute name="body" value="/WEB-INF/jsp/updatemarque.jsp" />
+    <put-attribute name="current" value="articles"/>
+  </definition>
+  
+  <definition name="updatecategorie" extends="common">
+    <put-attribute name="title" value="Update Categorie " />
+    <put-attribute name="body" value="/WEB-INF/jsp/updatecategorie.jsp" />
+    <put-attribute name="current" value="articles"/>
+  </definition>
+  
+  <definition name="viewfacture" extends="common">
+    <put-attribute name="title" value=" " />
+    <put-attribute name="body" value="/WEB-INF/jsp/viewfacture.jsp" />
+    <put-attribute name="current" value="stock"/>
+  </definition>
+  
+  <definition name="bonlivraison" extends="common">
+    <put-attribute name="title" value="Bon Livraison " />
+    <put-attribute name="body" value="/WEB-INF/jsp/bonlivraison.jsp" />
+    <put-attribute name="current" value="stock"/>
+  </definition>
+  
+   <definition name="viewbonlivraison" extends="common">
+    <put-attribute name="title" value=" " />
+    <put-attribute name="body" value="/WEB-INF/jsp/viewbonlivraison.jsp" />
+    <put-attribute name="current" value="stock"/>
+  </definition>
+  
+  <definition name="factureform" extends="common">
+    <put-attribute name="title" value=" Add Facture" />
+    <put-attribute name="body" value="/WEB-INF/jsp/factureform.jsp" />
+    <put-attribute name="current" value="stock"/>
+  </definition>
+  
+  
+</tiles-definitions>
